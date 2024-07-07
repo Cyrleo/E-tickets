@@ -1,0 +1,73 @@
+
+body
+{
+    color: black;
+    background-color: white;
+}
+
+form
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid yellow;
+    border-radius: 5px;
+    padding: 5%;
+    background-color: #4f4f4f;
+    width:20%;
+
+}
+.purchase_form
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input
+{
+    margin-top: 5%;
+    margin-bottom: 30%;
+    width: 95%;
+    height: 32px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+form:hover{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    border-color: deepskyblue;
+box-shadow: 0 0 3px deepskyblue;
+}
+
+h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+label {
+    font-weight: bold;
+}
+
+input:hover {
+border-color: deepskyblue;
+box-shadow: 0 0 3px deepskyblue;
+}
+.describe
+{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5%;
+    margin-top: -10%;
+    margin-bottom: 2%;
+    background-color: skyblue;
+}
+

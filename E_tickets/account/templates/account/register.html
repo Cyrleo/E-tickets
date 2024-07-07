@@ -1,0 +1,12 @@
+{% extends 'account/base.html' %}
+    {%  block title %} Register {% endblock %}
+
+    {% block form %}
+        <h2>Création d'un compte </h2>
+        <form method="POST"  action=""> {% csrf_token %}
+            {{ form.as_p }}
+            <p>Vous avez déja un compte ? <a href="{% url 'login' %}"> Se connecter</a></p>
+            <button type="submit" class="submit" > Connexion &#8594 </button>
+
+        </form>
+    {% endblock %}

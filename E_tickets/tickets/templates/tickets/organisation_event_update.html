@@ -1,0 +1,27 @@
+{% extends 'tickets/base.html' %}
+{% load static %}
+{% block link %}
+    <title>Mise à jour de l'événement</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link   rel="stylesheet" href="{% static 'tickets/add_update_event.css' %}">
+{% endblock %}
+{% block content %}
+    {% if  request.user.is_authenticated %}
+    <div class="form" >
+    <h1>Mise à jour de l'événement</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="bt" type="submit">Mettre à jour l'événement</button>
+
+        </form>
+    </div>
+
+    {% else %}
+        <div style="margin-bottom: 40% ; ">
+        <p class="auth_error"> {{ message }} <a href="{% url 'login' %}"> s'uthentifier</a> </p>
+            </div>
+    {% endif %}
+
+{% endblock %}

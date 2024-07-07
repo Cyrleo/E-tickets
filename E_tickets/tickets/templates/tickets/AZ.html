@@ -1,0 +1,94 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{%  static 'tickets/base.css' %}">
+    {% block link %} {% endblock %}
+</head>
+
+   <section class="header-section">
+        <div class="container">
+            <header class="navbar">
+                <div class="logo">
+                    <img src="media/event_images/images.jpeg" alt="Truc d'Ouf logo">
+                </div>
+                <nav>
+                    <ul >
+                        <li><a href="#" style="color: #1fc0fd" >Accueil</a></li>
+                        <li><a href="propos/about.html" style="color: #1fc0fd">A propos</a></li>
+                        <li><a href="propos/about.html#contact" style="color: #1fc0fd">Contact</a></li>
+                        <li><a href="{% url 'register' %}" style="color: #1fc0fd">S'Inscrire</a></li>
+                        <li><a href="{% url 'login' %}" style="color: #1fc0fd" title="Se connecter au compte de son organisation" >Connexion</a></li>
+                    </ul>
+                    <img src="media/event_images/cart.png" alt="Cart icon" width="26px">
+                </nav>
+            </header>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Donner à votre expérience web<br> un nouveau style!</h1>
+                    <p> Explorez notre sélection d'évènements disponible  <br>   pour vivre une expérience d'achat comme vous n'en avez jamais eu . <br> Avec nous plus besoin de ce déplacer pour avoir un ticket de l'évènement du moment</p>
+                    <a href="#event">Explorer maintenant &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="media/event_images/event.jpeg" alt="loading image">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    {% block content%} {% endblock %}
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <h3>A propos de nous</h3>
+              <p>Notre entreprise vend non seulement de l'électroménager de qualité, mais aussi des vêtements chauds pour l'hiver, des consoles de jeu pour tous les fans de gaming, et même des drones de photographie aérienne.</p>
+            </div>
+            <div class="col-3">
+              <h3>Liens utiles</h3>
+              <ul class="footer">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="">Event</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="{% url 'register' %}">S'inscrire</a></li>
+                <li><a href="{% url 'login' %}">Connexion</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h3>Newsletter</h3>
+              <p>Abonnez-vous à notre newsletter pour recevoir des offres exclusives et de réduction particulière.</p>
+              <form>
+                <input type="email" placeholder="Entrez votre email">
+                <button>S'abonner</button>
+              </form>
+            </div>
+            <div class="col-0">
+              <h3>Rejoignez-nous sur</h3>
+              <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=100076979057145"><img src="media/event_images/facebook.png" alt="facebok"></a></li>
+                <li><a href="https://www.twitter.com"><img src="media/event_images/twitter.png" alt="twitter"></a></li>
+                <li><a href="https://www.instagram.com"><img src="media/event_images/Instagram.png" alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com"><img src="media/event_images/youtube.png" alt="youtube"></a></li>
+                  <li><a href="https://wa.me/22955917627"><img src="media/event_images/whatsapp.png" alt="youtube"></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="containe">
+          <div class="copyright">
+            Copyright © 2023 Truc d'Ouf. Tous droits réservés.
+            <br>Conçu par Leo & Pierre
+          </div>
+          <a href="#" class="custom-btn-bas"><button class="custom-btn">&#8593</button></a>
+        </div>
+      </footer>
+
+
+</html>

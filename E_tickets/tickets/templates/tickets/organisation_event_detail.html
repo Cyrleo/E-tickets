@@ -1,0 +1,40 @@
+{% extends 'tickets/base.html' %}
+
+
+  {% block link %}
+    {% load static %}
+    <title>{{ event.name }}</title>
+    <link rel="stylesheet" href="{% static 'tickets/event_detail.css' %}">
+    <link rel="stylesheet" href="{% static 'tickets/style.css' %}">
+
+  {% endblock %}
+
+
+    {% block content %}
+    {% if  request.user.is_authenticated %}
+    <div class="prod disp_none">
+        <div class="image">
+            <img src="/media/{{event.image}}" alt="{{event.name}}" width="100%" height="100%"  id="image1" class="image">
+        </div>
+        <div class="description">
+          <div class="col-4">
+            <h1 class="prod_name">{{event.name}}</h1>
+            <p class="prod_describe">{{event.description}}</p>
+          </div>
+        </div>
+    </div>
+<div class="option disp_none">
+    <div class="prod_prix"><p>{{event.price}}$</p></div>
+    <div class="option_link">
+        <a href="{% url 'org_event_update' event.organisation  event.id %}" ><button class="bt" type="submit" > Modifier l'évènement</button> </a>
+        <a href="{% url 'org_event_delete' event.organisation event.id  %}"><button  class="bt" type="submit">Supprimer cet évèement</button> </a>
+
+    </div>
+    </div>
+    <h1  class="welcome disp_none"></h1>
+        <div class="container">
+            <div class="row" id="event"></div></div>
+     {% else %}
+        <p class="auth_error"> {{ message }} <a href="{% url 'login' %}"> s'authentifier</a> </p>
+    {% endif %}
+    {% endblock %}

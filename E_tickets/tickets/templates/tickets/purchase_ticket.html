@@ -1,0 +1,46 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Tickets</title>
+    <link rel="stylesheet" href="{% static 'tickets/purchase_ticket.css' %}">
+
+</head>
+<body>
+    <h1>Purchase Tickets for {{ event.name }}</h1>
+
+    <div class="purchase_form">
+        <form method="post">
+            {% csrf_token %}
+            <div class="describe">
+                <p>Available Tickets: {{ event.available_tickets }}</p>
+                <p>Price : {{event.price}}$</p>
+            </div>
+            {{ form.name.label_tag }}  {{form.name}}
+            <br>
+            {{ form.email.label_tag }} {{ form.email }}
+            <br>
+
+            {{ form.quantity.label_tag }} {{ form.quantity }}
+            <br>
+
+            <button type="submit">Purchase</button>
+        </form>
+    </div>
+    {% if form.errors %}
+        <div class="errors">
+            <h3>Errors:</h3>
+            <ul>
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% load static %}
+
+<script src="{% static 'js/live_search.js' %}"></script>
+
+<form class="search-form" action="{% url 'search1' %}" method="GET">
+  {% csrf_token %}
+  <input placeholder="Rechercher" name="q" id="search-input" type="search">
+  <button class="search" type="submit"><img src="{% static 'images/search.png' %}"></button>
+</form>
+
+<div id="results-list">{{events}}</div>

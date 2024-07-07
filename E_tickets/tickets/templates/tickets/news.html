@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>News Letter Confirmation</h1>
+<p>Vous venez de vous abonnez a la news letter. Plus de détails vous seront fournir par mail </p>
+<form id="submit-form" action="" method="post">
+    {% csrf_token %}
+    <input type="submit" value="OK">
+</form>
+
+<div id="confirmation-message" style="display: none;">
+    Opération prise en compte. Redirection dans 2 secondes...
+</div>
+
+<script>
+document.getElementById("submit-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("submit-form").style.display = "none";
+    document.querySelector('p').style.display = 'none';
+    document.getElementById("confirmation-message").style.display = "block";
+    setTimeout(function() {
+        window.location.href = "{% url 'home' %}";
+    }, 2000);
+});
+</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,96 @@
+{% extends 'tickets/base.html' %}
+{% load static %}
+    {% block link %}
+        <title>Home</title>
+        <link rel="stylesheet"  href="{% static 'tickets/style.css' %}" />
+    {% endblock %}
+
+    {% block head %}
+        <div class=" wel disp_none" style="margin-top: -2% ;">
+            <div id="slides-image">
+                <div class="image-text">
+                    <img src="{% static 'images/image1.jpeg' %}" class="img-slide" alt="Image 3">
+                    <div class="slide-text">
+                        <div class="step1">
+                            <h1>Acheter un ou plusieurs tickets de n'importe où</h1>
+                        </div>
+                        <p class="paragraphe">
+                            La plateforme est disponible depuis n'importe quelle région et
+                            n'importe quand
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image-text">
+                    <img src="{% static 'images/image2.jpeg' %}" class="img-slide" alt="Image 3">
+                    <div class="slide-text">
+                        <div class="step1">
+                            <h1>Sur PC comme sur mobile <br> ou encore Via votre tablete</h1>
+                        </div>
+                        <p class="paragraphe">
+                            Nous vous accompagnons dans la réalisation de
+                            vos projets électroniques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image-text">
+                    <img src="{% static 'images/image3.jpg' %}" class="img-slide" alt="Image 3">
+                    <div class="slide-text">
+                        <div class="step1">
+                            <h1>Gérer votre compte <br> Via mobile</h1>
+                        </div>
+                        <p class="paragraphe">
+                            Nous vous accompagnons dans la réalisation de
+                            vos projets électroniques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="buttone">
+                    <button class="ind-bt" id="prevButton"> < </button>
+                    <button class="ind-bt" id="nextButton"> > </button>
+                </div>
+
+                <div class="button-login">
+                    <a href="{% url 'login' %}" class="a" target="_blank"><button  class=" ind-bt boutton-connexion"> Connexion </button></a>
+                    <a href="{% url 'register' %}" class="a" target="_blank"> <button class="ind-bt boutton-inscription"> Inscription </button></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'js/slide.js' %}"></script>
+
+
+    {% endblock %}
+
+    {% block content %}
+        <body>
+            <div  class="disp_none promo" style=" margin-top: 10% ;display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <h1>Promo du Jour </h1>
+                    <a class="event" width="60%" href="{% url 'event-detail' 35 %} " >
+                        <img src="{% static 'images/promo1.webp' %}"   alt="" >
+                    </a>
+            </div>
+            <h1  class="welcome disp_none">Évèments Disponibles</h1>
+            <div class="container">
+                <div class="row" id="event">
+                    {% for event in events %}
+                        <div class="event">
+                            <a href="{% url  'event-detail' event.id %}">
+                                <img src="/media/{{event.image}}" alt="{{event.name}}">
+                            </a>
+                            <h3 class="name"> {{ event.name }}  </h3>
+                            <p class="price">{% if event.price == 0 %} Gratuit {% else %}{{event.price}} $ {% endif %}</p>
+                            <h3 class="organisation">{{event.organisation}}</h3>
+
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </body>
+    {% endblock %}
+
+
+
+

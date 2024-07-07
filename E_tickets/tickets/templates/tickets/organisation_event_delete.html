@@ -1,0 +1,27 @@
+
+
+<h1>Supprimer l'événement</h1>
+<p>En tant que représentant de l'organisation {{ organisation_name }}, êtes-vous sûr de vouloir supprimer l'évènement : {{ event.name }} ?</p>
+<form id="delete-form" action="" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Supprimer">
+    <input type="submit" value="Ne rien faire">
+</form>
+
+<div id="confirmation-message" style="display: none;">
+    Opération prise en compte . Redirection dans 8 secondes...
+</div>
+
+<script>
+document.getElementById("delete-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("delete-form").style.display = "none";
+    document.querySelector('p').style.display = 'none';
+    document.getElementById("confirmation-message").style.display = "block";
+    setTimeout(function() {
+        window.location.href = "{% url 'organisation' organisation_name %}";
+    }, 8000);
+});
+</script>
+
+

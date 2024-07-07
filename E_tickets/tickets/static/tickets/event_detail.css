@@ -1,0 +1,99 @@
+.prod {
+  margin-top: 20vh;
+  min-height: 50%;
+  display: flex;
+  justify-content: space-between;
+    width: 100%;
+}
+.description
+{
+    min-height: 50%;
+border: 1px solid black;
+width: 80%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+}
+
+.image
+{
+    width: 100%;
+    margin-right: 1%;
+    height: 50vh;
+    min-height: 50%;
+    position: relative;
+}
+.prod_describe
+{
+    width: 200%;
+    margin-left: -50%;
+}
+.prod_name
+{
+     width: 200%;
+    margin-left: -50%;
+}
+.prod_price
+{
+     width: 200%;
+    margin-left: -50%;
+}
+.Prix
+{
+
+
+
+}
+
+
+@media screen and (max-width: 800px)
+{
+    .prod
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .image
+    {
+        margin: 5%  0%;
+        width: 100%;
+        min-height: 50vh;
+    }
+    .description
+    { width: 100%;
+        min-height: 40vh;
+    }
+}
+
+.option
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.option_link
+{
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+.prod_prix
+{
+   background-color: black;
+   color: aliceblue;
+   padding: 1%;
+    display: flex;
+    justify-content:center;
+}
+
+button
+{
+    background-color: #0dcaf0;
+    border-radius: 80px;
+    margin-right: 20%;
+}

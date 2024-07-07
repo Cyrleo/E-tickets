@@ -1,0 +1,45 @@
+{% extends 'tickets/base.html' %}
+
+  <title>{{ organisation.name }}'s Events</title>
+  {% block link %}
+    {% load static %}
+    <title>{{ event.name }}</title>
+    <link rel="stylesheet" href="{% static 'tickets/style.css' %}">
+  {% endblock %}
+
+  {% block content %}
+
+    <div class="all" style="min-height: 40vh">
+        <h1  class="welcome disp_none">Évèments Disponibles</h1>
+                {% if events and events != current_event  %}
+
+            <div class="container">
+
+                <div class="row" id="event">
+                    {% for event in events %}
+                       {% if not event.id == current_event.id %}
+
+                        <div class="event">
+                            <a href="{% url  'event-detail' event.id %}">
+                                <img src="/media/{{event.image}}" alt="{{event.name}}">
+                            </a>
+                            <h3 class="name"> {{ event.name }}  </h3>
+                            <p class="price">{% if event.price == 0 %} Gratuit {% else %}{{event.price}} $ {% endif %}</p>
+                            <h3 class="organisation">{{event.organisation}}</h3>
+
+                        </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+    </div>
+
+
+
+        {% else %}
+            <p>Aucun événement trouvé pour cette organisation.</p>
+        {% endif %}
+
+  {% endblock %}
+
+

@@ -1,0 +1,101 @@
+<div class="all">
+
+    <section class="event">
+
+        <div class="img"><img  {% if event.image %} src="{{ event.image.url }}" {% endif %}  alt="Pas d'image disponible pour cet evènements" width="80%"></div>
+
+        <div class="description">
+
+            <h1>{{ event.name }}</h1>
+
+            <p>Organisation ayant prévu l'évènement: {{event.organisation.name}}</p>
+            <p>Nbre de tickets disonible :{{event.available_tickets}}</p>
+            <p>Prix Unitaire : {{event.price}}</p>
+            <p>Date : {{ formatted_date}} {{formatted_time}}</p>
+            {% if event.description %} <h1>Description : </h1>
+            <p>{{event.description}}{% endif %}</p>
+        </div>
+    </section>
+        <a href="{% url 'purchase_ticket' event.id %}" ><button type="submit" > Acheter tickets</button> </a>
+        <a href="{% url 'other_events' event.id event.organisation %}"><button type="submit">Autres évènements de cette organisations</button> </a>
+    </div>
+
+
+
+
+/* style */
+.event
+{
+    display: flex;
+    width: 100%;
+    margin: 5%;
+    justify-items: center;
+    border: 1px solid skyblue;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+.header-section
+{
+    margin-bottom: 20%;
+}
+@media screen and (max-width: 700px)
+{
+
+    .header-section
+    {
+        margin-bottom: 60%;
+    }
+}
+
+.description
+{
+        border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    border: 5px solid whitesmoke;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    align-self: center;
+}
+.img
+{
+    padding: 3%;
+    border: 1px solid blue;
+    width: 200%;
+    height: 100%;
+}
+image
+{
+    width: 100%;
+
+
+}
+button
+{
+    width: 20%;
+    margin-left: 40%;
+}
+.search
+{
+    width: auto;
+    margin: 0%;
+}
+.auth_error
+{
+    color: #ff0707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20%;
+    font-size: larger;
+}
+.all
+{
+    margin: 10%;
+}
+

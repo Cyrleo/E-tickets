@@ -1,0 +1,94 @@
+{% extends "tickets/base.html" %}
+{% load static %}
+    {% block link %}
+        <title>About Us</title>
+        <link rel="stylesheet" href="{% static 'tickets/propos.css' %} ">
+        <link rel="stylesheet" href="{% static 'tickets/style.css' %}">
+    {% endblock %}
+
+
+    {% block content %}
+        <div class="disp_none">
+            <h1> A propos de E-tickets</h1>
+            <br/> <br/>
+            <div class="conteneur">
+                <div class="element">
+                <h3>
+                    <strong>
+                        <em>
+                            Qui sommes-nous?
+                        </em>
+                    </strong>
+                </h3>
+                <p>
+                     E-tickets est une plateforme d'organisation <br/>
+                     d'événements en ligne  qui aide les professionnels<br/>
+                     et les particuliers à créer et à promouvoir des <br/>
+                     événementsréussis. Nous proposons une gamme de <br/>
+                     services et d'outils pour simplifier la planification<br/>
+                     et la gestion d'événements en ligne, des petits <br/>
+                     webinaires aux grands conférences."<br/><br/>
+                </p>
+                </div>
+                <div class="element">
+                    <h3>
+                        <em>
+                            Description des services
+                        </em>
+                    </h3>
+                    <p>
+                        Nous proposons une gamme de services et d'outils <br/>
+                        pour vous aider à organiser des événements <br/>
+                        en ligne réussis :<br/>
+                            <div class="endenter">Création de pages d'événements personnalisées;<br/> </div>
+                            <div class="endenter"> Gestion de la billetterie;<br/></div>
+                            <div class="endenter"> Promotion de votre événement;<br/></div>
+                            <div class="endenter">Suivi des participants ;<br/></div>
+
+                         Notre plateforme est facile à utiliser et à personnaliser,<br/>
+                         et elle est conçue pour vous aider à atteindre <br/>
+                         vos objectifs d'événement."<br/>
+                    </p>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="conteneur">
+             <div class="element">
+            <h3>  <em>Témoignages </em> </h3>
+            <p>
+
+              "[Nom du client] : "Nous avons organisé un webinaire <br/>
+              sur notre nouveau produit avec l'aidede [nom de votre entreprise]. <br/>
+              Le service était excellent et l'événement a été un succès."<br/>
+
+              "[Nom du partenaire] : "Nous travaillons avec [nom de votre entreprise] <br/>
+              depuis plusieurs années pour organiser nos conférences annuelles. <br/>
+              Nous sommes toujours satisfaits de leur  service et de leur <br/>
+              engagement envers la réussite de nos événements."<br/>
+
+            </p>
+            </div>
+
+            <div class="element">
+            <h3><em> Invitation à l'action  </em> </h3>
+            <p> Si vous souhaitez organiser un événement en ligne réussi, <br/>
+                contactez-nous dèsaujourd'hui pour en savoir plus sur nos services."<br/>
+
+                Bien sûr, vous pouvez adapter ce contenu à vos besoins et à votre entreprise. <br/>
+                Par exemple, vous pouvez ajouter des informations sur votre équipe, votre expérience <br/>
+                ou votre philosophie. Vous pouvez également utiliser des photos ou des vidéos <br/>
+                pour illustrer votre propos.<br/>
+
+                L'objectif est de créer une page "À propos" qui soit informative, <br/>
+                engageante et qui donne envie aux visiteurs de découvrir votre entreprise.<br/>
+                </p>
+             </div>
+
+            </div>
+        </div>
+        <h1  class="welcome disp_none"></h1>
+            <div class="container">
+                <div class="row" id="event"></div></div>
+{% endblock %}
+

@@ -1,0 +1,28 @@
+{% extends 'tickets/base.html' %}
+    {% block link %}
+    {% load static %}
+    <title>{{ event.name }}</title>
+    <link rel="stylesheet" href="{% static 'tickets/style.css' %}">
+  {% endblock %}
+{% block content %}
+    <div class="all">
+        <h1 class="welcome">Résultats de la recherche</h1>
+        <div class="container">
+            <div class="row">
+                {% for event in events %}
+                    <div class="event">
+                        <a href="{% url  'event-detail' event.id %}">
+                            <img src="/media/{{event.image}}" alt="{{event.name}}">
+                        </a>
+                        <h3 class="name"> {{ event.name }} </h3>
+                            <p class="price">{% if event.price == 0 %} Gratuit {% else %}{{event.price}} $ {% endif %}</p>
+                        <h3 class="organisation">{{event.organisation}}</h3>
+
+                    </div>
+                {% empty %}
+                    <h2 class="auth_error">Aucun évènement trouvé pour votre recherche</h2>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

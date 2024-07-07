@@ -1,0 +1,24 @@
+{% extends 'tickets/base.html' %}
+{% load static %}
+{% block link %}
+    <title>Création d'un nouvel evenement</title>
+    <link rel="stylesheet" href="{% static 'tickets/add_update_event.css' %}">
+{% endblock %}
+
+{% block content %}
+    {% if  request.user.is_authenticated %}
+    <div class="form" >
+    <h1>Création d'un nouvel evenement</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+    <button class=" bt button" type="submit">Créer l'événement</button>
+
+        </form>
+    </div>
+
+    {% else %}
+        <p class="auth_error"> {{ message }} <a href="{% url 'login' %}"> s'uthentifier</a> </p>
+    {% endif %}
+
+{% endblock %}

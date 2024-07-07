@@ -1,0 +1,21 @@
+{% extends 'tickets/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'tickets/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'tickets/style.css' %}">
+    <title>Contact-Us</title>
+{% endblock %}
+{% block content %}
+    <div class="login disp_none">
+    <p>Nous sommes là pour vous aider.</p>
+<form action="" method="post"  >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Envoyer">
+    </form>
+        </div>
+<h1  class="welcome disp_none"></h1>
+        <div class="container">
+            <div class="row" id="event"></div></div>
+{% endblock %}
