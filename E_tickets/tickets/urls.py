@@ -1,18 +1,45 @@
-from  django.urls import path
-from . import views
+# from django.urls import path
+# from .views import (
+#     OrganisationListCreateView,
+#     OrganisationDetailView,
+#     EventListCreateView,
+#     EventDetailBySlugView,
+#     TicketPurchaseListCreateView,
+#     TicketPurchaseDetailView,
+#     NewsLetterListCreateView,
+#     NewsLetterDetailView,
+# )
+#
+# urlpatterns = [
+#     # Organisation URLs
+#     path('api/organisations/', OrganisationListCreateView.as_view(), name='organisation-list'),
+#     path('organisations/<slug:slug>/', OrganisationDetailView.as_view(), name='organisation-detail'),
+#
+#     # Event URLs
+#     path('events/', EventListCreateView.as_view(), name='event-list'),
+#     path('events/<slug:slug>/', EventDetailBySlugView.as_view(), name='event-detail'),
+#
+#     # Ticket Purchase URLs
+#     path('ticket-purchases/', TicketPurchaseListCreateView.as_view(), name='ticketpurchase-list'),
+#     path('ticket-purchases/<int:pk>/', TicketPurchaseDetailView.as_view(), name='ticketpurchase-detail'),
+#
+#     # Newsletter URLs
+#     path('newsletters/', NewsLetterListCreateView.as_view(), name='newsletter-list'),
+#     path('newsletters/<int:pk>/', NewsLetterDetailView.as_view(), name='newsletter-detail'),
+# ]
 
-urlpatterns = [
-    path('' , views.index , name='home'),
-    path('Contact-us/', views.contact, name='contact'),
-    path('event/<int:event_id>/' , views.event_detail , name='event-detail'),
-    path('About/', views.pagePropos, name='about'),
-    path('ajax_search/' , views.search_event_ajax , name='ajax_search'),
-    path('news/' , views.news , name='news'),
-    path('event/<int:event_id>/purchase_ticket' , views.purchase_ticket , name='purchase_ticket'),
-    path('<str:organisation_name>/' , views.organisation_events , name='organisation'),
-    path('<str:organisation_name>/add_event/' , views.create_event , name='create_event'),
-    path('<str:organisation_name>/<int:event_id>/update' , views.update_event , name='org_event_update'),
-    path('<str:organisation_name>/<int:event_id>/delete', views.delete_event, name='org_event_delete'),
-    path('<str:organisation_name>/<int:event_id>/' , views.organisation_event_detail , name='event_detail'),
-    path('event/<int:event_id>/<str:organisation_name>/other_events/' , views.event_organisation_events , name='other_events'),
-]
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import OrganisationViewSet, EventViewSet, TicketPurchaseViewSet, NewsLetterViewSet
+
+
+
+router = DefaultRouter()
+router.register(r'organisations', OrganisationViewSet, basename='organisation')
+router.register(r'organisations/(?P<organisation_slug>[\w-]+)/events', EventViewSet, basename='organisation-events')
+router.register(r'events', EventViewSet, basename='event')
+router.register(r'ticket-purchases', TicketPurchaseViewSet, basename='ticketpurchase')
+router.register(r'newsletters', NewsLetterViewSet, basename='newsletter')
+
+
+urlpatterns = router.urls

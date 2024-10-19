@@ -1,7 +1,7 @@
-from  django.urls import path
-from . import views
-
+from django.urls import path, include
+from .views import *
 urlpatterns = [
-    path('register' , views.register , name='register' ),
-    path('sign-in' , views.connect , name='login')
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
+    path('auth/verify/auth/', ProtectedView.as_view(), name='auth-verify'),
 ]
