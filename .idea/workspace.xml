@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="733f28d4-4fc2-4c9d-8d58-30d1812d7339" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/E_tickets/old_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/account/email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/account/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/account/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/activation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/password_changed_confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/password_reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_1i9WK2L.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_U5WQeV1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_g9aVeyH.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_nk71W7h.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/alt_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0004_ticketpurchase_name_alter_event_organisation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0005_ticketpurchase_pdf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0006_organisation_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0007_remove_event_created_at_remove_event_inserted_by_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0008_event_created_at_event_inserted_by_event_updated_at_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/old_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/web_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/E-tickets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/E-tickets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GitLink.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/E_tickets/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/E_tickets/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/E_tickets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/E_tickets/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/static/account/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/static/account/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/static/account/space-galaxy-stars.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/registe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/tickets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/tickets/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/tickets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/tickets/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_tickets/tickets/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/tickets/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d079915a-ccbc-4c0b-915e-74aea8da59b6" />
+        <option name="url" value="https://github.com/cyr-leo/E-tickets.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Ty46PCRae4xrUiQLEvwvne5CJB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.E-tickets.executor": "Run",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/leo/Dev/E-tickets",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
+  }
+}]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="/tmp/qodana_output/qodana.sarif.json" />
+        <option name="reportGuid" value="984722a6-9137-4343-bc8d-4666ad0d7df4" />
+        <option name="reportName" value="E-tickets/qodana/2024-10-06" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="/tmp/qodana_output/qodana.sarif.json" reportGuid="984722a6-9137-4343-bc8d-4666ad0d7df4" reportId="E-tickets/qodana/2024-10-06" />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/E_tickets/tickets/templates/tickets" />
+      <recent name="$PROJECT_DIR$/E_tickets/tickets/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="E-tickets" type="Python.DjangoServer" factoryName="Django server">
+      <module name="E-tickets" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
+        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="733f28d4-4fc2-4c9d-8d58-30d1812d7339" name="Changes" comment="" />
+      <created>1692001811546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692001811546</updated>
+      <workItem from="1692001813128" duration="737000" />
+      <workItem from="1692018422503" duration="8780000" />
+      <workItem from="1692110456128" duration="646000" />
+      <workItem from="1692173593664" duration="24112000" />
+      <workItem from="1692258811076" duration="19642000" />
+      <workItem from="1692282116373" duration="375000" />
+      <workItem from="1692282898769" duration="71000" />
+      <workItem from="1692282998245" duration="2893000" />
+      <workItem from="1692346569753" duration="7659000" />
+      <workItem from="1692358940581" duration="6556000" />
+      <workItem from="1692371914682" duration="5110000" />
+      <workItem from="1692458013344" duration="9145000" />
+      <workItem from="1692478424873" duration="1988000" />
+      <workItem from="1692558949420" duration="3570000" />
+      <workItem from="1692603206449" duration="438000" />
+      <workItem from="1692603667566" duration="8822000" />
+      <workItem from="1692626511581" duration="7300000" />
+      <workItem from="1692689528708" duration="20303000" />
+      <workItem from="1692777220138" duration="5594000" />
+      <workItem from="1692782918324" duration="346000" />
+      <workItem from="1692783292607" duration="7350000" />
+      <workItem from="1692800902437" duration="8181000" />
+      <workItem from="1692811242971" duration="599000" />
+      <workItem from="1692864118589" duration="12919000" />
+      <workItem from="1692904857189" duration="663000" />
+      <workItem from="1692949923768" duration="6661000" />
+      <workItem from="1692973989859" duration="137000" />
+      <workItem from="1693126691946" duration="286000" />
+      <workItem from="1693161200301" duration="3422000" />
+      <workItem from="1693295269318" duration="620000" />
+      <workItem from="1693380273720" duration="8432000" />
+      <workItem from="1693409838724" duration="994000" />
+      <workItem from="1693412736339" duration="2146000" />
+      <workItem from="1693468090227" duration="303000" />
+      <workItem from="1693553783643" duration="13597000" />
+      <workItem from="1693665995121" duration="501000" />
+      <workItem from="1693675533333" duration="6657000" />
+      <workItem from="1693724336262" duration="5971000" />
+      <workItem from="1693777990609" duration="616000" />
+      <workItem from="1693900267240" duration="3475000" />
+      <workItem from="1693993189901" duration="2284000" />
+      <workItem from="1694083168934" duration="1021000" />
+      <workItem from="1694186608488" duration="1428000" />
+      <workItem from="1694379092211" duration="134000" />
+      <workItem from="1694693752028" duration="8856000" />
+      <workItem from="1704539961566" duration="1295000" />
+      <workItem from="1704554645635" duration="2527000" />
+      <workItem from="1704561690380" duration="464000" />
+      <workItem from="1704562172036" duration="71000" />
+      <workItem from="1704562280276" duration="12000" />
+      <workItem from="1704562426283" duration="57000" />
+      <workItem from="1704562498046" duration="849000" />
+      <workItem from="1704630302480" duration="2697000" />
+      <workItem from="1704634821762" duration="1305000" />
+      <workItem from="1704933814844" duration="325000" />
+      <workItem from="1704934151355" duration="192000" />
+      <workItem from="1704962696424" duration="18000" />
+      <workItem from="1705132483260" duration="21000" />
+      <workItem from="1709633022816" duration="973000" />
+      <workItem from="1709673392898" duration="598000" />
+      <workItem from="1709704882162" duration="542000" />
+      <workItem from="1709711849660" duration="85000" />
+      <workItem from="1709725153788" duration="604000" />
+      <workItem from="1711019145705" duration="890000" />
+      <workItem from="1711020051888" duration="70000" />
+      <workItem from="1711035974010" duration="25000" />
+      <workItem from="1711104110456" duration="2550000" />
+      <workItem from="1711444059676" duration="38000" />
+      <workItem from="1720393760535" duration="275000" />
+      <workItem from="1720394079049" duration="1855000" />
+      <workItem from="1727249108792" duration="109000" />
+      <workItem from="1727249242449" duration="112000" />
+      <workItem from="1727249723921" duration="65000" />
+      <workItem from="1728214845995" duration="5344000" />
+      <workItem from="1729376981213" duration="330000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1692023314374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692023314374</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1692023337076</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692023337076</updated>
+    </task>
+    <task id="LOCAL-00003" summary="change">
+      <option name="closed" value="true" />
+      <created>1692283159139</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692283159139</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1720394498193</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720394498193</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="change" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+</project>
