@@ -31,7 +31,7 @@ router = DefaultRouter()
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('api/tickets/', include(tickets_urls)),
-                  path('api/', include('account.urls'))
+                   path('api/', include('account.urls'))
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

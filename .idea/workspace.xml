@@ -5,64 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="733f28d4-4fc2-4c9d-8d58-30d1812d7339" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/E_tickets/old_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/account/email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/account/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/account/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/activation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/confirmation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/password_changed_confirmation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/account/templates/account/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_1i9WK2L.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_U5WQeV1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_g9aVeyH.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/media/pdf/event_ticket_nk71W7h.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/alt_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0004_ticketpurchase_name_alter_event_organisation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0005_ticketpurchase_pdf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0006_organisation_users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0007_remove_event_created_at_remove_event_inserted_by_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/migrations/0008_event_created_at_event_inserted_by_event_updated_at_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/old_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/E_tickets/tickets/web_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/E-tickets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/E-tickets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GitLink.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/E_tickets/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/E_tickets/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/E_tickets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/E_tickets/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/static/account/back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/static/account/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/static/account/space-galaxy-stars.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/registe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/templates/account/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/tickets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/tickets/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/tickets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/tickets/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E_tickets/tickets/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_tickets/tickets/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +84,7 @@
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -286,7 +229,7 @@
       <workItem from="1727249242449" duration="112000" />
       <workItem from="1727249723921" duration="65000" />
       <workItem from="1728214845995" duration="5344000" />
-      <workItem from="1729376981213" duration="330000" />
+      <workItem from="1729376981213" duration="1724000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -320,7 +263,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720394498193</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <option name="closed" value="true" />
+      <created>1729377415628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729377415628</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1729377446940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729377446940</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
