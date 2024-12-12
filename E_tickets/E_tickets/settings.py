@@ -40,7 +40,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = 'duqymfuiddteofvj'
 
 
-ALLOWED_HOSTS = ['e-tickets.onrender.com', 'localhost' , '127.0.0.1' ]
+ALLOWED_HOSTS = ['*' ]
 
 
 # Application definition
