@@ -9,3 +9,4 @@ sqlparse==0.5.1
 django-safedelete
 django-cors-headers
 djoser
+django_otp
