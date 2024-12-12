@@ -40,7 +40,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = 'duqymfuiddteofvj'
 
 
-ALLOWED_HOSTS = ['leo.com', '192.168.24.24' ,'192.168.58.24' , '192.168.1.101' , '192.168.0.120','192.168.187.24' , '192.168.240.24' , 'localhost' , '127.0.0.1' , '192.168.100.11' ]
+ALLOWED_HOSTS = ['e-tickets.onrender.com', 'localhost' , '127.0.0.1' ]
 
 
 # Application definition
