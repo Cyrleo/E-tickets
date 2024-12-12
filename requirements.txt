@@ -11,3 +11,4 @@ django-cors-headers
 djoser
 django_otp
 whitenoise
+gunicorn
